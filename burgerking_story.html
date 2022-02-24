@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>burgerking story</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- bxslider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> 
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script> 
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>     
+    <!-- bxslider.js -->
+    <script src="js/bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/import.css">
+    <!-- js -->
+    <script src="js/global.js"></script>
+    <script src="js/page.js"></script>
+    <!-- jQuery cookie cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body class="burgerking_story_page">
+    <header> 
+        <div class="floatContainer">
+            <h1 class="floatLeft"><a href="index.html"><img src="images/logo.png" alt="버거킹에 오신걸 환영합니다."></a></h1>
+            <div class="mobile_icon floatRight floatContainer">
+                <a href="login.html" class="floatLeft"></a> 
+                <a href="location.html" class="floatLeft"></a> 
+                <div class="floatLeft">
+                    <span class="material-icons">
+                        menu
+                    </span>
+                </div>
+            </div>
+            <nav>
+                <ul class="floatContainer nav_arial floatRight">
+                    <li class="mobile_Search">
+                        <ol>
+                            <li>
+                                <input type="text" class="title_05">
+                                <button class="title_05">Search</button>
+                            </li>
+                        </ol>
+                        <span class="material-icons">
+                            clear
+                        </span>
+                    </li>
+                    <li class="mobile_Search">
+                        <a href="#">
+                            My Burgerking
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol>
+                            <li>Delivery</li>
+                            <li><a href="#">Delivery Order</a></li>
+                            <li><a href="login.html">로그인</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            HOME
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>홈</li>
+                            <li><a href="location.html">매장 찾기</a></li>
+                            <li><a href="service.html">고객 서비스</a></li>
+                            <li><a href="notice.html">공지사항</a></li>
+                            <li><a href="application.html">버거킹 앱 이용 팁</a></li>
+                            <li><a href="questions.html">FAQ</a></li>
+                            <li><a href="inquiry.html">문의</a></li>
+                            <li><a href="recruitment.html">가맹점 모집</a></li>
+                            <li><a href="recruit.html">인재 채용</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="menu.html">
+                            MENU
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>메뉴</li>
+                            <li><a href="menu.html">스페셜&할인팩</a></li>
+                            <li><a href="menu.html">프리미엄</a></li>
+                            <li><a href="menu.html">와퍼</a></li>
+                            <li><a href="menu.html">주니어&버거</a></li>
+                            <li><a href="menu.html">올데이킹&치킨버거</a></li>
+                            <li><a href="menu.html">사이드</a></li>
+                            <li><a href="menu.html">음료&디저트</a></li>
+                            <li><a href="menu.html">독퍼</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="event.html">
+                            EVENT
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>이벤트</li>
+                            <li><a href="event.html">이벤트</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="story.html">
+                            STORY
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>스토리</li>
+                            <li><a href="burgerking_story.html">버거킹 스토리</a></li>
+                            <li><a href="burgerking_why.html">WHY 버거킹</a></li>
+                            <li><a href="burgerking_news.html">버거킹 NEWS</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            SIGN IN
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>로그인</li>
+                            <li><a href="login.html">로그인</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <!-- //nav -->
+            <a href="#" class="floatLeft">Delivery Order</a>
+        </div>
+    </header>
+    <!-- //header -->
+    <button class="top_button"><img src="images/icon_TOP_button.png" alt="최상단으로 이동합니다"></button>
+    <!-- //top_button -->
+    <section class="head_banner grid_wrap">
+        <div class="floatContainer">
+            <h2 class="floatLeft strong_05">버거킹 스토리</h2>
+            <ul class="floatRight floatContainer">
+                <li class="floatLeft">
+                    <a href="index.html">
+                        <span class="material-icons">
+                            home
+                        </span>
+                    </a>
+                </li>
+                <li class="floatLeft">&gt;</li>
+                <li class="floatLeft">브랜드 스토리</li>
+                <li class="floatLeft">&gt;</li>
+                <li class="floatLeft">버거킹 스토리</li>
+            </ul>
+        </div>
+    </section>
+    <!-- //head_banner -->
+    <section class="about_bgk grid_wrap">
+        <h2 class="strong_04">ABOUT 버거킹</h2>
+        <figure class="floatContainer">
+            <img src="images/img_story01.png" alt="GLOBAL 버거킹 입니다" class="floatRight">
+            <figcaption class="floatLeft">
+                <h3 class="strong_03">GLOBAL 버거킹</h3>
+                <p class="title_01">
+                    세계 최대 QSR(Quick Service Restaurant) 브랜드 중 하나인 버거킹은 1954년 미국 마이애미
+                    에서 James W.McLamore와 David Edgerton에 의해 설립되었습니다. 버거킹은 현재 100개 
+                    이상의 국가에서 15,000개 이상의 매장을 운영하고 있습니다. 고기를 팬에 굽는 일반 QSR과는 
+                    달리, 버거킹은 고기를 직접 불에 구워 조리하는 직화 방식 (Flame-Broiling)으로 담백하고 풍부
+                    한 맛과 향, 그리고 정통 햄버거의 풍미를 선보이고 있습니다. 버거킹의 대표 제품인 와퍼
+                    (Whopper)는 100% 순 쇠고기 패티와 함께 양상추, 토마토, 양파, 피클 등 4가지 신선한 야채
+                    가 어우러진 풍부한 맛으로 전세계 고객에게 사랑 받고 있습니다. 세계적으로 “Taste is King”이
+                    라는 슬로건을 바탕으로 일상에서 맛볼 수 있는 작은 즐거움을 고객에게 제공하기 위해 항상 최
+                    선을 다하고 있습니다.
+                </p>
+            </figcaption>
+        </figure>
+        <figure class="floatContainer">
+            <img src="images/img_story02.png" alt="버거킹 KOREA 입니다" class="floatLeft">
+            <figcaption class="floatLeft">
+                <h3 class="strong_03">버거킹 KOREA</h3>
+                <p class="title_01">
+                    버거킹은 지난 1984년 종로점을 오픈하며 한국에 진출한 이래, 차별화된 제품과 개성 있는 매장
+                    인테리어로 지난 30년간 한국 소비자의 사랑을 받아오고 있습니다. “가장 맛있는 햄버거를 제공
+                   하는 프리미엄 QSR 브랜드”로 자리매김한 버거킹은 현재 전국 369개(2019년 9월 기준) 매장을 
+                   운영하고 있습니다. 좋은 품질의 제품(Quality)과 친절한 서비스 (Service) 그리고 청결한 매장
+                   (Cleanliness)은 고객 여러분께 더 큰 만족을 드리고자 노력하는 버거킹의 약속이자 가치입니다.
+                    더욱 풍성하고 맛있는 제품과 정성을 다하는 고객 서비스로 여러분께 더욱 가까이 다가가도록 
+                   하겠습니다.
+                </p>
+            </figcaption>
+        </figure>
+    </section>
+    <!-- //about_bgk -->
+    <section class="history">
+        <div>
+            <div class="grid_wrap">
+                <h2 class="strong_04">HISTORY</h2>
+                <img src="images/img_history02.png" alt="2015년부터 2021년까지의 히스토리입니다.">
+                <ul>
+                    <li>
+                        <strong>2021</strong>
+                        <p>
+                            - 한국에서 가장 존경받는 기업 프랜차이즈부문 3년 연속 1위(한국능률협회컨설팅) / Korea’s Most Admired 
+                            Companies, Franchise Winner, KMAC
+                        </p>
+                    </li>
+                    <li>
+                        <strong>2020</strong>
+                        <p>- 6월 현재 403개 매장 보유</p>
+                        <p>- 에피 어워드 실버 / Effie Awards Korea, Silver</p>
+                    </li>
+                    <li>
+                        <strong>2019</strong>
+                        <p>- ‘독퍼(Dogpper)’ 2019 앤어워드 F&B 부문 Digital AD Winner 수상</p>
+                        <p>- ‘올데이킹 사딸라’ 제13회 대학생이 뽑은 좋은 광고 대상 수상</p>
+                        <p>- ‘올데이킹 사딸라’ 2019 서울영상광고제 TV부문 동상 수상</p>
+                        <p>- 380호점 하남미사점 오픈</p>
+                        <p>- 서울영상광고제 동상 / Seoul Video Ad Awards, Bronze</p>
+                    </li>
+                    <li>
+                        <strong>2018</strong>
+                        <p>- 24시간 딜리버리 서비스 도입</p>
+                        <p>- 서브웨이 그릴 셸프(Subway Grill Shelf) ‘국민이 선택한 좋은 광고상’</p>
+                        <p>- 옥외광고 부문 수상</p>
+                        <p>- 시청자가 뽑은 좋은 광고상 OOH 부문 수상(한국광고주협회) / Good Ads Awards(KAA) – OOH Winner</p>
+                        <p>- 웹어워드 코리아 프로모션 부분 수상 / Web Award Korea – Promotion Winner</p>
+                    </li>
+                    <li>
+                        <strong>2017</strong>
+                        <p>- 300호점 약수역점 오픈</p>
+                        <p>- 통새우와퍼 광고 서울영상광고제 2016 TV부문 수상</p>
+                    </li>
+                    <li>
+                        <strong>2016</strong>
+                        <p>- 버거킹 앱 출시</p>
+                        <p>- 무인결제시스템(KIOSK) 서비스 도입</p>
+                        <p>- ‘아침은 왕처럼’ 캠페인, ‘국민이 선택한 좋은 광고상’ 온라인부문 수상</p>
+                    </li>
+                    <li>
+                        <strong>2015</strong>
+                        <p>- 아침은 왕처럼’ 캠페인, 칸 국제광고제 미디어 부문 은상 수상</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid_wrap">
+            <div>
+                <img src="images/img_history03.png" alt="2009년부터 2014년까지의 히스토리입니다.">
+                <ul>
+                    <li>
+                        <strong>2014</strong>
+                        <p>한국 버거킹 런칭 30주년 -</p>
+                    </li>
+                    <li>
+                        <strong>2013</strong>
+                        <p>딜리버리 서비스 도입 -</p>
+                        <p>아시아 1,000호점 개점 (과천중앙점) -</p>
+                    </li>
+                    <li>
+                        <strong>2011</strong>
+                        <p>버거킹 아시아퍼시픽 컨퍼런스 FRANCHISE OF THE YEAR 2011 수상 - <br>
+                            (아시아퍼시픽 14 국가 중 1위)</p>
+                        <p>KS-SQ(한국서비스품질지수) 패스트푸드부문 1위 -</p>
+                    </li>
+                    <li>
+                        <strong>2009</strong>
+                        <p>국가 고객만족도 6년 연속 1위 수상 -</p>
+                        <p>KS-SQ(한국서비스품질지수) 패스트푸드부문 1위 -</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="grid_wrap">
+                <img src="images/img_history01.png" alt="1984년부터 2004년까지의 히스토리입니다.">
+                <ul>
+                    <li>
+                        <strong>2004</strong>
+                        <p>- 한국 능률협회 선정 주요 패스트푸드 고객만족지수 4년 연속 1위</p>
+                        <p>- 한국 표준협회 선정 주요 패스트푸드 서비스품질지수 1위</p>
+                    </li>
+                    <li>
+                        <strong>2000</strong>
+                        <p>- 미국 BURGERKING CO. 주최 BIM 개최 프랜차이즈</p>
+                        <p>- 최우수상, 마케팅상 수상</p>
+                    </li>
+                    <li>
+                        <strong>1984</strong>
+                        <p>- 1호점 종로점 오픈</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //history -->
+    <footer>
+        <ul class="floatContainer">
+            <li>
+                <h2>HOME <button></button></h2>
+                <ol>
+                    <li><a href="location.html">매장 찾기</a></li>
+                    <li><a href="service.html">고객 서비스</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="application.html">버거킹 앱 이용 팁</a></li>
+                    <li><a href="questions.html">FAQ</a></li>
+                    <li><a href="inquiry.html">문의</a></li>
+                    <li><a href="recruitment.html">가맹점 모집</a></li>
+                    <li><a href="recruit.html">인재 채용</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>MENU <button></button></h2>
+                <ol>
+                    <li><a href="menu.html">스페셜&할인팩</a></li>
+                    <li><a href="menu.html">프리미엄</a></li>
+                    <li><a href="menu.html">와퍼</a></li>
+                    <li><a href="menu.html">주니어&버거</a></li>
+                    <li><a href="menu.html">올데이킹&치킨버거</a></li>
+                    <li><a href="menu.html">사이드</a></li>
+                    <li><a href="menu.html">음료&디저트</a></li>
+                    <li><a href="menu.html">독퍼</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>EVENT <button></button></h2>
+                <ol>
+                    <li><a href="event.html">이벤트</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>STORY <button></button></h2>
+                <ol>
+                    <li><a href="burgerking_story.html">버거킹 스토리</a></li>
+                    <li><a href="burgerking_why.html">WHY 버거킹</a></li>
+                    <li><a href="burgerking_news.html">버거킹 NEWS</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>SIGN IN <button></button></h2>
+                <ol>
+                    <li><a href="login.html">로그인</a></li>
+                </ol>
+            </li>
+        </ul>
+        <div class="policy">
+            <div class="floatContainer">
+                <a href="Terms_of_Use.html">이용약관</a>
+                <a href="Terms_of_Use
+                .html">개인정보취급방침</a>
+                <a href="Terms_of_Use.html">법적고지</a>
+            </div>
+        </div>
+        <!-- clear -->
+        <div class="btn_ft floatContainer">
+            <a href="location.html">매장찾기</a>
+            <a href="recruitment.html">가맹점 모집</a>
+            <a href="recruit.html">인재채용</a>
+        </div>
+        <address class="floatContainer">
+            <span class="footer_title">(주)BKR 대표이사 문영주</span>
+            <a href="tel:+8215990505" class="footer_title">TEL : 1599-0505</a>
+            <span class="footer_title">사업자 등록번호 101-86-76277</span>
+            <span class="footer_title">통신판매번호 : 2016-서울종로-1050</span>
+        </address>
+        <p>Copyright 2019 BKR Co. Ltd. All right Reserved</p>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>

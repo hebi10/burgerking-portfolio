@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location_page</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- bxslider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> 
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script> 
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>     
+    <!-- bxslider.js -->
+    <script src="js/event_bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/import.css">
+    <!-- js -->
+    <script src="js/global.js"></script>
+    <script src="js/page.js"></script>
+    <!-- jQuery cookie cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- kakao api -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=549c720954ffcda0145d32062954a866&libraries=services"></script>
+</head>
+<body class="location_page">
+    <header> 
+        <div class="floatContainer">
+            <h1 class="floatLeft"><a href="index.html"><img src="images/logo.png" alt="버거킹에 오신걸 환영합니다."></a></h1>
+            <div class="mobile_icon floatRight floatContainer">
+                <a href="login.html" class="floatLeft"></a> 
+                <a href="location.html" class="floatLeft"></a> 
+                <div class="floatLeft">
+                    <span class="material-icons">
+                        menu
+                    </span>
+                </div>
+            </div>
+            <nav>
+                <ul class="floatContainer nav_arial floatRight">
+                    <li class="mobile_Search">
+                        <ol>
+                            <li>
+                                <input type="text" class="title_05">
+                                <button class="title_05">Search</button>
+                            </li>
+                        </ol>
+                        <span class="material-icons">
+                            clear
+                        </span>
+                    </li>
+                    <li class="mobile_Search">
+                        <a href="#">
+                            My Burgerking
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol>
+                            <li>Delivery</li>
+                            <li><a href="#">Delivery Order</a></li>
+                            <li><a href="login.html">로그인</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            HOME
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>홈</li>
+                            <li><a href="location.html">매장 찾기</a></li>
+                            <li><a href="service.html">고객 서비스</a></li>
+                            <li><a href="notice.html">공지사항</a></li>
+                            <li><a href="application.html">버거킹 앱 이용 팁</a></li>
+                            <li><a href="questions.html">FAQ</a></li>
+                            <li><a href="inquiry.html">문의</a></li>
+                            <li><a href="recruitment.html">가맹점 모집</a></li>
+                            <li><a href="recruit.html">인재 채용</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="menu.html">
+                            MENU
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>메뉴</li>
+                            <li><a href="menu.html">스페셜&할인팩</a></li>
+                            <li><a href="menu.html">프리미엄</a></li>
+                            <li><a href="menu.html">와퍼</a></li>
+                            <li><a href="menu.html">주니어&버거</a></li>
+                            <li><a href="menu.html">올데이킹&치킨버거</a></li>
+                            <li><a href="menu.html">사이드</a></li>
+                            <li><a href="menu.html">음료&디저트</a></li>
+                            <li><a href="menu.html">독퍼</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="event.html">
+                            EVENT
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>이벤트</li>
+                            <li><a href="event.html">이벤트</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="story.html">
+                            STORY
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>스토리</li>
+                            <li><a href="burgerking_story.html">버거킹 스토리</a></li>
+                            <li><a href="burgerking_why.html">WHY 버거킹</a></li>
+                            <li><a href="burgerking_news.html">버거킹 NEWS</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            SIGN IN
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>로그인</li>
+                            <li><a href="login.html">로그인</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <!-- //nav -->
+            <a href="#" class="floatLeft">Delivery Order</a>
+        </div>
+    </header>
+    <!-- //header -->
+    <button class="top_button"><img src="images/icon_TOP_button.png" alt="최상단으로 이동합니다"></button>
+    <!-- //top_button -->
+    <section class="head_banner grid_wrap">
+        <div class="floatContainer">
+            <h2 class="floatLeft strong_04">매장 찾기</h2>
+            <ul class="floatRight floatContainer">
+                <li class="floatLeft">
+                    <a href="index.html">
+                        <span class="material-icons">
+                            home
+                        </span>
+                    </a>
+                </li>
+                <li class="floatLeft">&gt;</li>
+                <li class="floatLeft title_01">매장 찾기</li>
+            </ul>
+        </div>
+    </section>
+    <!-- //head_banner -->
+    <section class="location">
+        <div class="map_wrap">
+            <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
+        
+            <div id="menu_wrap" class="bg_white">
+                <div class="option">
+                    <div>
+                        <form onsubmit="searchPlaces(); return false;">
+                            키워드 : <input type="text" value="서울 버거킹" id="keyword" size="15"> 
+                            <button type="submit">검색하기</button> 
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <ul id="placesList"></ul>
+                <div id="pagination"></div>
+            </div>
+        </div>
+        <script>
+            var markers = [];
+
+            var mapContainer = document.getElementById('map'),
+                mapOption = {
+                    center: new kakao.maps.LatLng(37.566826, 126.9786567),
+                    level: 3 
+                };  
+
+
+            var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+            var ps = new kakao.maps.services.Places();  
+
+            var infowindow = new kakao.maps.InfoWindow({zIndex:1});
+
+            searchPlaces();
+
+            function searchPlaces() {
+
+                var keyword = document.getElementById('keyword').value;
+
+                if (!keyword.replace(/^\s+|\s+$/g, '')) {
+                    alert('키워드를 입력해주세요!');
+                    return false;
+                }
+
+                ps.keywordSearch( keyword, placesSearchCB); 
+            }
+
+            function placesSearchCB(data, status, pagination) {
+                if (status === kakao.maps.services.Status.OK) {
+
+                    displayPlaces(data);
+
+                    displayPagination(pagination);
+
+                } else if (status === kakao.maps.services.Status.ZERO_RESULT) {
+
+                    alert('검색 결과가 존재하지 않습니다.');
+                    return;
+
+                } else if (status === kakao.maps.services.Status.ERROR) {
+
+                    alert('검색 결과 중 오류가 발생했습니다.');
+                    return;
+
+                }
+            }
+
+            function displayPlaces(places) {
+
+                var listEl = document.getElementById('placesList'), 
+                menuEl = document.getElementById('menu_wrap'),
+                fragment = document.createDocumentFragment(), 
+                bounds = new kakao.maps.LatLngBounds(), 
+                listStr = '';
+                
+                removeAllChildNods(listEl);
+
+                removeMarker();
+                
+                for ( var i=0; i<places.length; i++ ) {
+
+                    var placePosition = new kakao.maps.LatLng(places[i].y, places[i].x),
+                        marker = addMarker(placePosition, i), 
+                        itemEl = getListItem(i, places[i]);
+
+                    bounds.extend(placePosition);
+
+                    (function(marker, title) {
+                        kakao.maps.event.addListener(marker, 'mouseover', function() {
+                            displayInfowindow(marker, title);
+                        });
+
+                        kakao.maps.event.addListener(marker, 'mouseout', function() {
+                            infowindow.close();
+                        });
+
+                        itemEl.onmouseover =  function () {
+                            displayInfowindow(marker, title);
+                        };
+
+                        itemEl.onmouseout =  function () {
+                            infowindow.close();
+                        };
+                    })(marker, places[i].place_name);
+
+                    fragment.appendChild(itemEl);
+                }
+
+                listEl.appendChild(fragment);
+                menuEl.scrollTop = 0;
+
+                map.setBounds(bounds);
+            }
+
+            function getListItem(index, places) {
+
+                var el = document.createElement('li'),
+                itemStr = '<span class="markerbg marker_' + (index+1) + '"></span>' +
+                            '<div class="info">' +
+                            '   <h5>' + places.place_name + '</h5>';
+
+                if (places.road_address_name) {
+                    itemStr += '    <span>' + places.road_address_name + '</span>' +
+                                '   <span class="jibun gray">' +  places.address_name  + '</span>';
+                } else {
+                    itemStr += '    <span>' +  places.address_name  + '</span>'; 
+                }
+                            
+                itemStr += '  <span class="tel">' + places.phone  + '</span>' +
+                            '</div>';           
+
+                el.innerHTML = itemStr;
+                el.className = 'item';
+
+                return el;
+            }
+
+            function addMarker(position, idx, title) {
+                var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png', 
+                    imageSize = new kakao.maps.Size(36, 37),  
+                    imgOptions =  {
+                        spriteSize : new kakao.maps.Size(36, 691), 
+                        spriteOrigin : new kakao.maps.Point(0, (idx*46)+10), 
+                        offset: new kakao.maps.Point(13, 37) 
+                    },
+                    markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imgOptions),
+                        marker = new kakao.maps.Marker({
+                        position: position, 
+                        image: markerImage 
+                    });
+
+                marker.setMap(map); 
+                markers.push(marker);  
+
+                return marker;
+            }
+
+            function removeMarker() {
+                for ( var i = 0; i < markers.length; i++ ) {
+                    markers[i].setMap(null);
+                }   
+                markers = [];
+            }
+
+            function displayPagination(pagination) {
+                var paginationEl = document.getElementById('pagination'),
+                    fragment = document.createDocumentFragment(),
+                    i; 
+
+                while (paginationEl.hasChildNodes()) {
+                    paginationEl.removeChild (paginationEl.lastChild);
+                }
+
+                for (i=1; i<=pagination.last; i++) {
+                    var el = document.createElement('a');
+                    el.href = "#";
+                    el.innerHTML = i;
+
+                    if (i===pagination.current) {
+                        el.className = 'on';
+                    } else {
+                        el.onclick = (function(i) {
+                            return function() {
+                                pagination.gotoPage(i);
+                            }
+                        })(i);
+                    }
+
+                    fragment.appendChild(el);
+                }
+                paginationEl.appendChild(fragment);
+            }
+
+            function displayInfowindow(marker, title) {
+                var content = '<div style="padding:5px;z-index:1;">' + title + '</div>';
+
+                infowindow.setContent(content);
+                infowindow.open(map, marker);
+            }
+
+            function removeAllChildNods(el) {   
+                while (el.hasChildNodes()) {
+                    el.removeChild (el.lastChild);
+                }
+            }
+        </script>
+    </section>
+    <!-- //location_page -->
+    <section class="event_slider grid_wrap">
+        <h2>매장에서 진행되는 이벤트</h2>
+        <div class="event_show home__slider">
+            <ul class="bxslider">
+                <li>
+                    <dl>
+                        <dt><a href="event_Alldayking"><img src="images/img_host_event01.png" alt="올데이킹 이벤트 안내"></a></dt>
+                        <dd><a href="event_alldayking.html">독퍼</a></dd>
+                        <dd><a href="event_alldayking.html">10/12(화) ~</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="event_Alldayking"><img src="images/img_host_event02.png" alt="올데이킹 이벤트 안내"></a></dt>
+                        <dd><a href="event_alldayking.html">프리미엄와퍼 3900원</a></dd>
+                        <dd><a href="event_alldayking.html">10/18(월) ~ 10/24(일)</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <div class="arrow_btn">
+                <span class="material-icons btn_prev"></span>
+                <span class="material-icons btn_next"></span>
+            </div>
+            <div class="play_btn">
+                <span class="material-icons bx-stop">
+                    pause
+                </span>
+                <span class="material-icons bx-start">
+                    play_arrow
+                </span>
+            </div>
+    </section>
+    <footer>
+        <ul class="floatContainer">
+            <li>
+                <h2>HOME <button></button></h2>
+                <ol>
+                    <li><a href="location.html">매장 찾기</a></li>
+                    <li><a href="service.html">고객 서비스</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="application.html">버거킹 앱 이용 팁</a></li>
+                    <li><a href="questions.html">FAQ</a></li>
+                    <li><a href="inquiry.html">문의</a></li>
+                    <li><a href="recruitment.html">가맹점 모집</a></li>
+                    <li><a href="recruit.html">인재 채용</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>MENU <button></button></h2>
+                <ol>
+                    <li><a href="menu.html">스페셜&할인팩</a></li>
+                    <li><a href="menu.html">프리미엄</a></li>
+                    <li><a href="menu.html">와퍼</a></li>
+                    <li><a href="menu.html">주니어&버거</a></li>
+                    <li><a href="menu.html">올데이킹&치킨버거</a></li>
+                    <li><a href="menu.html">사이드</a></li>
+                    <li><a href="menu.html">음료&디저트</a></li>
+                    <li><a href="menu.html">독퍼</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>EVENT <button></button></h2>
+                <ol>
+                    <li><a href="event.html">이벤트</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>STORY <button></button></h2>
+                <ol>
+                    <li><a href="burgerking_story.html">버거킹 스토리</a></li>
+                    <li><a href="burgerking_why.html">WHY 버거킹</a></li>
+                    <li><a href="burgerking_news.html">버거킹 NEWS</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>SIGN IN <button></button></h2>
+                <ol>
+                    <li><a href="login.html">로그인</a></li>
+                </ol>
+            </li>
+        </ul>
+        <div class="policy">
+            <div class="floatContainer">
+                <a href="Terms_of_Use.html">이용약관</a>
+                <a href="Terms_of_Use.html">개인정보취급방침</a>
+                <a href="Terms_of_Use.html">법적고지</a>
+            </div>
+        </div>
+        <!-- clear -->
+        <div class="btn_ft floatContainer">
+            <a href="location.html">매장찾기</a>
+            <a href="recruitment.html">가맹점 모집</a>
+            <a href="recruit.html">인재채용</a>
+        </div>
+        <address class="floatContainer">
+            <span class="footer_title">(주)BKR 대표이사 문영주</span>
+            <a href="tel:+8215990505" class="footer_title">TEL : 1599-0505</a>
+            <span class="footer_title">사업자 등록번호 101-86-76277</span>
+            <span class="footer_title">통신판매번호 : 2016-서울종로-1050</span>
+        </address>
+        <p>Copyright 2019 BKR Co. Ltd. All right Reserved</p>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>

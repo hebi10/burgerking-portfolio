@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- bxslider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> 
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script> 
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>     
+    <!-- bxslider.js -->
+    <script src="js/event_bxslider_sub.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <!-- js -->
+    <script src="js/global.js"></script>
+    <script src="js/page.js"></script>
+    <!-- jQuery cookie cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header> 
+        <div class="floatContainer">
+            <h1 class="floatLeft"><a href="index.html"><img src="images/logo.png" alt="버거킹에 오신걸 환영합니다."></a></h1>
+            <div class="mobile_icon floatRight floatContainer">
+                <a href="login.html" class="floatLeft"></a> 
+                <a href="location.html" class="floatLeft"></a> 
+                <div class="floatLeft">
+                    <span class="material-icons">
+                        menu
+                    </span>
+                </div>
+            </div>
+            <nav>
+                <ul class="floatContainer nav_arial floatRight">
+                    <li class="mobile_Search">
+                        <ol>
+                            <li>
+                                <input type="text" class="title_05">
+                                <button class="title_05">Search</button>
+                            </li>
+                        </ol>
+                        <span class="material-icons">
+                            clear
+                        </span>
+                    </li>
+                    <li class="mobile_Search">
+                        <a href="#">
+                            My Burgerking
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol>
+                            <li>Delivery</li>
+                            <li><a href="#">Delivery Order</a></li>
+                            <li><a href="login.html">로그인</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            HOME
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>홈</li>
+                            <li><a href="location.html">매장 찾기</a></li>
+                            <li><a href="service.html">고객 서비스</a></li>
+                            <li><a href="notice.html">공지사항</a></li>
+                            <li><a href="application.html">버거킹 앱 이용 팁</a></li>
+                            <li><a href="questions.html">FAQ</a></li>
+                            <li><a href="inquiry.html">문의</a></li>
+                            <li><a href="recruitment.html">가맹점 모집</a></li>
+                            <li><a href="recruit.html">인재 채용</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="menu.html">
+                            MENU
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>메뉴</li>
+                            <li><a href="menu.html">스페셜&할인팩</a></li>
+                            <li><a href="menu.html">프리미엄</a></li>
+                            <li><a href="menu.html">와퍼</a></li>
+                            <li><a href="menu.html">주니어&버거</a></li>
+                            <li><a href="menu.html">올데이킹&치킨버거</a></li>
+                            <li><a href="menu.html">사이드</a></li>
+                            <li><a href="menu.html">음료&디저트</a></li>
+                            <li><a href="menu.html">독퍼</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="event.html">
+                            EVENT
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>이벤트</li>
+                            <li><a href="event.html">이벤트</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="story.html">
+                            STORY
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>스토리</li>
+                            <li><a href="burgerking_story.html">버거킹 스토리</a></li>
+                            <li><a href="burgerking_why.html">WHY 버거킹</a></li>
+                            <li><a href="burgerking_news.html">버거킹 NEWS</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            SIGN IN
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>로그인</li>
+                            <li><a href="login.html">로그인</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <!-- //nav -->
+            <a href="#" class="floatLeft">Delivery Order</a>
+        </div>
+    </header>
+    <!-- //header -->
+    <button class="top_button"><img src="images/icon_TOP_button.png" alt="최상단으로 이동합니다"></button>
+    <!-- //top_button -->
+    <section class="head_banner grid_wrap">
+        <div class="floatContainer">
+            <h2 class="floatLeft strong_04">이벤트</h2>
+            <ul class="floatRight floatContainer">
+                <li class="floatLeft">
+                    <a href="index.html">
+                        <span class="material-icons">
+                            home
+                        </span>
+                    </a>
+                </li>
+                <li class="floatLeft">&gt;</li>
+                <li class="floatLeft">이벤트</li>
+            </ul>
+        </div>
+    </section>
+    <!-- //head_banner -->
+    <section class="event_subpage grid_wrap">
+        <div class="floatContainer">
+            <h2 class="title_03_02">프렌치프라이(L) 1+1</h2>
+            <em class="title_01">09/01(수) ~ 09/30(목)</em>
+        </div>
+        <div>
+            <img src="images/img_event52.png" alt="프렌치프라이(L) 1+1 이벤트 입니다">
+            <ol>
+                <li>1. 행사명 : 프렌치프라이(L) 1+1</li>
+                <li>2. 제품 : 프렌치프라이(L)</li>
+                <li>
+                    3. 행사 기간 : 21년 9월 1일(수) ~ 9월 30일(목)
+                </li>
+                <li>
+                    4. 행사 시간 : 매장 운영시간에 따라 상이 합니다.
+                </li>
+                <li>
+                    5. 유의 사항 : <br>
+                    <br>
+                    *1인 5개까지만 판매<br>
+                    <br>
+                    *다른 할인 및 쿠폰과 중복 혜택 불가<br>
+                    <br>
+                    *딜리버리 주문 불가 및 예약 주문 불가<br>
+                    <br>
+                    *일부 매장은 행사에서 제외될 수 있습니다.<br>
+                    <br>
+                    *단체주문에서는 제외됩니다.<br>
+                    <br>
+                    *본 제품은 실제 이미지와 다를 수 있습니다.
+                </li>
+                <li>
+                    6. 제외매장<br>
+                    <br>
+                    대명비발디점, 삼성라이온즈파크점, 서울역점, 오션월드점, 인천공항1점, 
+                    인천공항교통센터1점, 경기양평점, 경남대점, 경남사천점, 경남삼천포점, 
+                    경북도청점, 경북상주점, 경북영주가흥점, 경산사동점, 경주보문점, 
+                    광양LF스퀘어점, 광양중동점, 광주경안점, 광주매곡점, 광주봉선점, 
+                    광주상무점, 광주월계점, 광주일곡점, 광주첨단2지구점, 광주터미널점, 
+                    광주하남점, 구미산동점, 구미신평점, 구미인의점, 군산나운FS점, 
+                    군산수송점, 김천교동DT점, 김포현대아울렛점, 나주빛가람점, 당진읍내점, 
+                    대구대명FS점, 대구대점, 대구율하점, 대구죽전네거리DT점, 대구지산점, 
+                    대구칠곡3지구점, 대구테크노폴리스점, 대전관평점, 대전도안점, 대전시청점, 
+                    대전현대아울렛점, 목포하당점, 방배카페골목점, 보령동대점, 부산괴정역점, 
+                    부산망미SK점, 부산안락DT점, 부산오시리아점, 서산호수공원점, 세종반곡점, 
+                    세종행복새롬점, 수원매탄점, 수원정자점, 숭례문점, 안동옥동점, 안동중앙점, 
+                    안산고잔점, 여수웅천점, 연희점, 오산궐동점, 오창호수공원점, 용인동백점, 
+                    원광대점, 원주기업도시점, 원주무실점, 의정부HP점, 익산영등점, 인제대점, 
+                    인천송도센트럴파크점, 인천연수HP점, 인천연수점, 전남도청점, 전북대점, 
+                    전주중앙점, 정읍중앙점, 진주경상대점, 진주혁신도시점, 천안두정점, 
+                    천안성성점, 천안쌍용대로DT점, 청담주성GS점, 청주복대점, 청주오송점, 
+                    청주율량점, 충남대병원DT점, 충남도청점, 충북대점, 충북진천점, 
+                    충북혁신도시점, 충주연수점, 평택청북점, 포항공대점, 한동대점, 해운대비치점, 
+                    해운대우동점, 호남대점
+                </li>
+            </ol>
+        </div>
+        <div class="floatContainer">
+            <a class="floatRight"  href="event.html">목록</a>
+            <img src="images/burgerking_app_QR.png" alt="버거킹 앱 QR코드입니다" class="floatRight">
+        </div>
+        <div class="slider">
+            <h2 class="title_03_02">진행 이벤트</h2>
+            <ul class="bxslider">
+                <li>
+                    <a href="event_dogper.html">
+                        <img src="images/img_host_event01.png" alt="프리미엄 와퍼 3900원">
+                        <strong>독퍼</strong>
+                        <p>10/12(화) ~</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/img_host_event02.png" alt="치즈렐라 출시">
+                        <strong>프리미엄와퍼 3900원</strong>
+                        <p>10/18(월) ~ 10/24(일)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/img_host_event03.png" alt="치즈렐라 출시">
+                        <strong>프리미엄와퍼 3900원</strong>
+                        <p>10/18(월) ~ 10/24(일)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/img_host_event03.png" alt="치즈렐라 출시">
+                        <strong>프리미엄와퍼 3900원</strong>
+                        <p>10/18(월) ~ 10/24(일)</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="arrow_btn">
+                <span class="material-icons btn_prev"></span>
+                <span class="material-icons btn_next"></span>
+            </div>
+            <div class="play_btn">
+                <span class="material-icons bx-start">
+                    play_arrow
+                </span>
+                <span class="material-icons bx-stop">
+                    pause
+                </span>
+            </div>
+        </div>
+        <!-- bxslider -->
+    </section>
+    <!-- //event_page -->
+    <footer>
+        <ul class="floatContainer">
+            <li>
+                <h2>HOME <button></button></h2>
+                <ol>
+                    <li><a href="location.html">매장 찾기</a></li>
+                    <li><a href="service.html">고객 서비스</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="application.html">버거킹 앱 이용 팁</a></li>
+                    <li><a href="questions.html">FAQ</a></li>
+                    <li><a href="inquiry.html">문의</a></li>
+                    <li><a href="recruitment.html">가맹점 모집</a></li>
+                    <li><a href="recruit.html">인재 채용</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>MENU <button></button></h2>
+                <ol>
+                    <li><a href="menu.html">스페셜&할인팩</a></li>
+                    <li><a href="menu.html">프리미엄</a></li>
+                    <li><a href="menu.html">와퍼</a></li>
+                    <li><a href="menu.html">주니어&버거</a></li>
+                    <li><a href="menu.html">올데이킹&치킨버거</a></li>
+                    <li><a href="menu.html">사이드</a></li>
+                    <li><a href="menu.html">음료&디저트</a></li>
+                    <li><a href="menu.html">독퍼</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>EVENT <button></button></h2>
+                <ol>
+                    <li><a href="event.html">이벤트</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>STORY <button></button></h2>
+                <ol>
+                    <li><a href="burgerking_story.html">버거킹 스토리</a></li>
+                    <li><a href="burgerking_why.html">WHY 버거킹</a></li>
+                    <li><a href="burgerking_news.html">버거킹 NEWS</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>SIGN IN <button></button></h2>
+                <ol>
+                    <li><a href="login.html">로그인</a></li>
+                </ol>
+            </li>
+        </ul>
+        <div class="policy">
+            <div class="floatContainer">
+                <a href="Terms_of_Use.html">이용약관</a>
+                <a href="Terms_of_Use.html">개인정보취급방침</a>
+                <a href="Terms_of_Use.html">법적고지</a>
+            </div>
+        </div>
+        <!-- clear -->
+        <div class="btn_ft floatContainer">
+            <a href="location.html">매장찾기</a>
+            <a href="recruitment.html">가맹점 모집</a>
+            <a href="recruit.html">인재채용</a>
+        </div>
+        <address class="floatContainer">
+            <span class="footer_title">(주)BKR 대표이사 문영주</span>
+            <a href="tel:+8215990505" class="footer_title">TEL : 1599-0505</a>
+            <span class="footer_title">사업자 등록번호 101-86-76277</span>
+            <span class="footer_title">통신판매번호 : 2016-서울종로-1050</span>
+        </address>
+        <p>Copyright 2019 BKR Co. Ltd. All right Reserved</p>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>

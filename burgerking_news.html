@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>burgerking news</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- bxslider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> 
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script> 
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>     
+    <!-- bxslider.js -->
+    <script src="js/bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/import.css">
+    <!-- js -->
+    <script src="js/global.js"></script>
+    <script src="js/page.js"></script>
+    <!-- jQuery cookie cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header> 
+        <div class="floatContainer">
+            <h1 class="floatLeft"><a href="index.html"><img src="images/logo.png" alt="버거킹에 오신걸 환영합니다."></a></h1>
+            <div class="mobile_icon floatRight floatContainer">
+                <a href="login.html" class="floatLeft"></a> 
+                <a href="location.html" class="floatLeft"></a> 
+                <div class="floatLeft">
+                    <span class="material-icons">
+                        menu
+                    </span>
+                </div>
+            </div>
+            <nav>
+                <ul class="floatContainer nav_arial floatRight">
+                    <li class="mobile_Search">
+                        <ol>
+                            <li>
+                                <input type="text" class="title_05">
+                                <button class="title_05">Search</button>
+                            </li>
+                        </ol>
+                        <span class="material-icons">
+                            clear
+                        </span>
+                    </li>
+                    <li class="mobile_Search">
+                        <a href="#">
+                            My Burgerking
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol>
+                            <li>Delivery</li>
+                            <li><a href="#">Delivery Order</a></li>
+                            <li><a href="login.html">로그인</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            HOME
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>홈</li>
+                            <li><a href="location.html">매장 찾기</a></li>
+                            <li><a href="service.html">고객 서비스</a></li>
+                            <li><a href="notice.html">공지사항</a></li>
+                            <li><a href="application.html">버거킹 앱 이용 팁</a></li>
+                            <li><a href="questions.html">FAQ</a></li>
+                            <li><a href="inquiry.html">문의</a></li>
+                            <li><a href="recruitment.html">가맹점 모집</a></li>
+                            <li><a href="recruit.html">인재 채용</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="menu.html">
+                            MENU
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>메뉴</li>
+                            <li><a href="menu.html">스페셜&할인팩</a></li>
+                            <li><a href="menu.html">프리미엄</a></li>
+                            <li><a href="menu.html">와퍼</a></li>
+                            <li><a href="menu.html">주니어&버거</a></li>
+                            <li><a href="menu.html">올데이킹&치킨버거</a></li>
+                            <li><a href="menu.html">사이드</a></li>
+                            <li><a href="menu.html">음료&디저트</a></li>
+                            <li><a href="menu.html">독퍼</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="event.html">
+                            EVENT
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>이벤트</li>
+                            <li><a href="event.html">이벤트</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="story.html">
+                            STORY
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>스토리</li>
+                            <li><a href="burgerking_story.html">버거킹 스토리</a></li>
+                            <li><a href="burgerking_why.html">WHY 버거킹</a></li>
+                            <li><a href="burgerking_news.html">버거킹 NEWS</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            SIGN IN
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>로그인</li>
+                            <li><a href="login.html">로그인</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <!-- //nav -->
+            <a href="#" class="floatLeft">Delivery Order</a>
+        </div>
+    </header>
+    <!-- //header -->
+    <button class="top_button"><img src="images/icon_TOP_button.png" alt="최상단으로 이동합니다"></button>
+    <!-- //top_button -->
+    <section class="head_banner grid_wrap">
+        <div class="floatContainer">
+            <h2 class="floatLeft strong_05">버거킹 NEWS</h2>
+            <ul class="floatRight floatContainer">
+                <li class="floatLeft">
+                    <a href="index.html">
+                        <span class="material-icons">
+                            home
+                        </span>
+                    </a>
+                </li>
+                <li class="floatLeft">&gt;</li>
+                <li class="floatLeft">버거킹 NEWS</li>
+                <li class="floatLeft">&gt;</li>
+                <li class="floatLeft">버거킹 NEWS</li>
+            </ul>
+        </div>
+    </section>
+    <!-- //head_banner -->
+    <section class="burgerking_news_page grid_wrap">
+        <h2 class="title_05">광고(TV/Digital)</h2>
+        <div>
+            <h3 class="strong_05">[버거킹]모짜렐라 치즈가 통째로! 치즈렐라 출시</h3>
+            <iframe src="https://www.youtube.com/embed/WC-brsmzGsI" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+            </iframe>
+        </div>
+        <div>
+            <h3 class="strong_05">압도적인 맛! 기네스 스태커 출시</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZnEEPvjYJAg" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <div>
+            <h3>진짜 괴물같은 녀석을 만나다, 몬스터Ⅱ출시!</h3>
+        </div>
+        <div>
+            <h3>기네스 와퍼 통 커지다</h3>
+        </div>
+        <div>
+            <h3>더 통통한 새우와 함께 돌아온 상어가족 새우버거</h3>
+        </div>
+        <div>
+            <h3>불맛 가득! 신제품 플랜트 와퍼</h3>
+        </div>
+        <div>
+            <h3>부드러운 소불고기에 매콤함을 더하다! 고추장소불고기버거 출시</h3>
+        </div>
+        <div>
+            <h3>패티까지 진짜 불고기! 직화 소불고기 버거 출시</h3>
+        </div>
+        <div>
+            <h3>NEW 기네스 와퍼 출시!</h3>
+        </div>
+        <div>
+            <h3>NEW 기네스 할로윈 와퍼 출시!</h3>
+        </div>
+        <div>
+            <h3>와퍼가 기네스를 만나다, 기네스 와퍼 출시!</h3>
+        </div>
+        <div>
+            <h3>NEW 칠리크랩통새우 출시!</h3>
+        </div>
+        <div>
+            <h3>게 누구냐! 다시 돌아온 붉은대게와퍼</h3>
+        </div>
+        <div>
+            <h3>드디어...돌아온 게냐?</h3>
+        </div>
+        <div>
+            <h3>상어가족이 잡은 싱싱한 새우가 가득! NEW 상어가족 새우버거</h3>
+        </div>
+        <div>
+            <h3>모짜렐라 치즈번으로 더 특별하게! 더콰트로치즈 대출시</h3>
+        </div>
+        <div>
+            <h3>Iron Dragon 티져 감독판</h3>
+        </div>
+        <div>
+            <h3>[버거킹] NEW 트러플 통모짜 와퍼 사랑고민 남녀편</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 통모짜 와퍼 사랑고민 남녀 편</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 다시 돌아온 독퍼 30"</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 반려견 간식 독퍼(Dogpper) 출시</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 반려견 간식 독퍼(Dogpper) 50"</h3>
+        </div>
+        <div>
+            <h3>[버거킹] Dogpper 티징 6"</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 볼케이노 칠리와퍼 TVCF 30”</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 볼케이노 칠리와퍼 TVCF 15” 세친구 편</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 볼케이노 칠리와퍼 TVCF 15” 여기 미국이야? 편</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 볼케이노 칠리와퍼</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 판을 뒤흔들 신제품 V72</h3>
+        </div>
+        <div>
+            <h3>[버거킹] Episode 버거나라 삼남매</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 버거킹도 우리 민족이었어 15”</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 김영철 아저씨 사딸라! ALL DAY KING 사딸라! TVCF 30”</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 김영철 아저씨 사딸라! ALL DAY KING 사딸라! TVCF 15”</h3>
+        </div>
+        <div>
+            <h3>[버거킹] ANGRY 몬스터X가 사라졌다!?</h3>
+        </div>
+        <div>
+            <h3>[버거킹] ”트러플콰트로머쉬룸와퍼” TVCF 30”</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 밸런스 치킨버거 모델편 30”</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 밸런스 치킨버거 모델편 15”</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 몬스터와퍼 TVCF 30”</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 킹대킹 TVCF 15”</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 킹대킹 TVCF 30”</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 몬스터X 30”</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 왕처럼 즐기는 킹박스 15”</h3>
+        </div>
+        <div>
+            <h3>[버거킹] ”트러플콰트로머쉬룸 와퍼” 메이킹 필름</h3>
+        </div>
+        <div>
+            <h3>[버거킹] ”트러플콰트로머쉬룸와퍼” TVCF 30”(HD)</h3>
+        </div>
+        <div>
+            <h3>[버거킹] ”트러플콰트로머쉬룸와퍼” TVCF 15”</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 할로윈 한정! ANGRY 몬스터X 출시</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 밸런스 치킨버거 시즐편 30”</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 괴물같은 녀석이 깨.어.났.다! 몬스터와퍼 Viral 30”</h3>
+        </div>
+        <div>
+            <h3>[버거킹] 왕처럼 즐기는 킹박스 6”</h3>
+        </div>
+        <ol>
+            <li class="active">ALL</li>
+            <li>2021</li>
+            <li>2020</li>
+            <li>2019</li>
+            <li>2018</li>
+            <li>2017</li>
+            <li>2016~</li>
+        </ol>
+        <ul class="news2021">
+            <li data-news="21">[버거킹]모짜렐라 치즈가 통째로! 치즈렐라 출시</li>
+            <li data-news="21">압도적인 맛! 기네스 스태커 출시</li>
+            <li data-news="21">진짜 괴물같은 녀석을 만나다, 몬스터Ⅱ출시!</li>
+            <li data-news="21">기네스 와퍼 통 커지다</li>
+            <li data-news="21">더 통통한 새우와 함께 돌아온 상어가족 새우버거</li>
+            <li data-news="21">불맛 가득! 신제품 플랜트 와퍼</li>
+            <li data-news="21">부드러운 소불고기에 매콤함을 더하다! 고추장소불고기버거 출시</li>
+            <li data-news="20">패티까지 진짜 불고기! 직화 소불고기 버거 출시</li>
+            <li data-news="20">NEW 기네스 와퍼 출시!</li>
+            <li data-news="20">NEW 기네스 할로윈 와퍼 출시!</li>
+            <li data-news="20">와퍼가 기네스를 만나다, 기네스 와퍼 출시!</li>
+            <li data-news="20">NEW 칠리크랩통새우 출시!</li>
+            <li data-news="20">게 누구냐! 다시 돌아온 붉은대게와퍼</li>
+            <li data-news="20">드디어...돌아온 게냐?</li>
+            <li data-news="20">상어가족이 잡은 싱싱한 새우가 가득! NEW 상어가족 새우버거</li>
+            <li data-news="20">모짜렐라 치즈번으로 더 특별하게! 더콰트로치즈 대출시</li>
+            <li data-news="19">Iron Dragon 티져 감독판 </li>
+            <li data-news="19">[버거킹] NEW 트러플 통모짜 와퍼 사랑고민 남녀편</li>
+            <li data-news="19">[버거킹] 통모짜 와퍼 사랑고민 남녀 편</li>
+            <li data-news="19">[버거킹] 다시 돌아온 독퍼 30"</li>
+            <li data-news="19">[버거킹] 반려견 간식 독퍼(Dogpper) 출시</li>
+            <li data-news="19">[버거킹] 반려견 간식 독퍼(Dogpper) 50"</li>
+            <li data-news="19">[버거킹] Dogpper 티징 6"</li>
+            <li data-news="19">[버거킹] 볼케이노 칠리와퍼 TVCF 30”</li>
+            <li data-news="19">[버거킹] 볼케이노 칠리와퍼 TVCF 15” 세친구 편</li>
+            <li data-news="19">[버거킹] 볼케이노 칠리와퍼 TVCF 15” 여기 미국이야? 편</li>
+            <li data-news="19">[버거킹] 볼케이노 칠리와퍼</li>
+            <li data-news="19">[버거킹] 판을 뒤흔들 신제품 V72</li>
+            <li data-news="19">[버거킹] Episode 버거나라 삼남매</li>
+            <li data-news="19">[버거킹] 버거킹도 우리 민족이었어 15”</li>
+            <li data-news="19">[버거킹] 김영철 아저씨 사딸라! ALL DAY KING 사딸라! TVCF 30”</li>
+            <li data-news="19">[버거킹] 김영철 아저씨 사딸라! ALL DAY KING 사딸라! TVCF 15”</li>
+            <li data-news="18">[버거킹] ANGRY 몬스터X가 사라졌다!?</li>
+            <li data-news="18">[버거킹] ”트러플콰트로머쉬룸와퍼” TVCF 30”</li>
+            <li data-news="18">[버거킹] 밸런스 치킨버거 모델편 30”</li>
+            <li data-news="18">[버거킹] 밸런스 치킨버거 모델편 15”</li>
+            <li data-news="18">[버거킹] 몬스터와퍼 TVCF 30”</li>
+            <li data-news="18">[버거킹] 킹대킹 TVCF 15”</li>
+            <li data-news="18">[버거킹] 킹대킹 TVCF 30”</li>
+            <li data-news="18">[버거킹] 몬스터X 30”</li>
+            <li data-news="18">[버거킹] 왕처럼 즐기는 킹박스 15”</li>
+            <li data-news="18">[버거킹] ”트러플콰트로머쉬룸 와퍼” 메이킹 필름</li>
+            <li data-news="18">[버거킹] ”트러플콰트로머쉬룸와퍼” TVCF 30”(HD)</li>
+            <li data-news="18">[버거킹] ”트러플콰트로머쉬룸와퍼” TVCF 15”</li>
+            <li data-news="18">[버거킹] 할로윈 한정! ANGRY 몬스터X 출시</li>
+            <li data-news="18">[버거킹] 밸런스 치킨버거 시즐편 30”</li>
+            <li data-news="18">[버거킹] 괴물같은 녀석이 깨.어.났.다! 몬스터와퍼 Viral 30”</li>
+            <li data-news="18">[버거킹] 왕처럼 즐기는 킹박스 6”</li>
+        </ul>
+    </section>
+    <!-- //burgerking_news -->
+    <footer>
+        <ul class="floatContainer">
+            <li>
+                <h2>HOME <button></button></h2>
+                <ol>
+                    <li><a href="location.html">매장 찾기</a></li>
+                    <li><a href="service.html">고객 서비스</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="application.html">버거킹 앱 이용 팁</a></li>
+                    <li><a href="questions.html">FAQ</a></li>
+                    <li><a href="inquiry.html">문의</a></li>
+                    <li><a href="recruitment.html">가맹점 모집</a></li>
+                    <li><a href="recruit.html">인재 채용</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>MENU <button></button></h2>
+                <ol>
+                    <li><a href="menu.html">스페셜&할인팩</a></li>
+                    <li><a href="menu.html">프리미엄</a></li>
+                    <li><a href="menu.html">와퍼</a></li>
+                    <li><a href="menu.html">주니어&버거</a></li>
+                    <li><a href="menu.html">올데이킹&치킨버거</a></li>
+                    <li><a href="menu.html">사이드</a></li>
+                    <li><a href="menu.html">음료&디저트</a></li>
+                    <li><a href="menu.html">독퍼</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>EVENT <button></button></h2>
+                <ol>
+                    <li><a href="event.html">이벤트</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>STORY <button></button></h2>
+                <ol>
+                    <li><a href="burgerking_story.html">버거킹 스토리</a></li>
+                    <li><a href="burgerking_why.html">WHY 버거킹</a></li>
+                    <li><a href="burgerking_news.html">버거킹 NEWS</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>SIGN IN <button></button></h2>
+                <ol>
+                    <li><a href="login.html">로그인</a></li>
+                </ol>
+            </li>
+        </ul>
+        <div class="policy">
+            <div class="floatContainer">
+                <a href="Terms_of_Use.html">이용약관</a>
+                <a href="Terms_of_Use.html">개인정보취급방침</a>
+                <a href="Terms_of_Use.html">법적고지</a>
+            </div>
+        </div>
+        <!-- clear -->
+        <div class="btn_ft floatContainer">
+            <a href="location.html">매장찾기</a>
+            <a href="recruitment.html">가맹점 모집</a>
+            <a href="recruit.html">인재채용</a>
+        </div>
+        <address class="floatContainer">
+            <span class="footer_title">(주)BKR 대표이사 문영주</span>
+            <a href="tel:+8215990505" class="footer_title">TEL : 1599-0505</a>
+            <span class="footer_title">사업자 등록번호 101-86-76277</span>
+            <span class="footer_title">통신판매번호 : 2016-서울종로-1050</span>
+        </address>
+        <p>Copyright 2019 BKR Co. Ltd. All right Reserved</p>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>

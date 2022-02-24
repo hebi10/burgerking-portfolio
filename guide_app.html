@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guide_app</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- bxslider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> 
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script> 
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>     
+    <!-- bxslider.js -->
+    <script src="js/bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/import.css">
+    <!-- js -->
+    <script src="js/global.js"></script>
+    <script src="js/page.js"></script>
+    <!-- jQuery cookie cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body class="guide_app_page">
+    <header> 
+        <div class="floatContainer">
+            <h1 class="floatLeft"><a href="index.html"><img src="images/logo.png" alt="버거킹에 오신걸 환영합니다."></a></h1>
+            <div class="mobile_icon floatRight floatContainer">
+                <a href="login.html" class="floatLeft"></a> 
+                <a href="location.html" class="floatLeft"></a> 
+                <div class="floatLeft">
+                    <span class="material-icons">
+                        menu
+                    </span>
+                </div>
+            </div>
+            <nav>
+                <ul class="floatContainer nav_arial floatRight">
+                    <li class="mobile_Search">
+                        <ol>
+                            <li>
+                                <input type="text" class="title_05">
+                                <button class="title_05">Search</button>
+                            </li>
+                        </ol>
+                        <span class="material-icons">
+                            clear
+                        </span>
+                    </li>
+                    <li class="mobile_Search">
+                        <a href="#">
+                            My Burgerking
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol>
+                            <li>Delivery</li>
+                            <li><a href="#">Delivery Order</a></li>
+                            <li><a href="login.html">로그인</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            HOME
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>홈</li>
+                            <li><a href="location.html">매장 찾기</a></li>
+                            <li><a href="service.html">고객 서비스</a></li>
+                            <li><a href="notice.html">공지사항</a></li>
+                            <li><a href="application.html">버거킹 앱 이용 팁</a></li>
+                            <li><a href="questions.html">FAQ</a></li>
+                            <li><a href="inquiry.html">문의</a></li>
+                            <li><a href="recruitment.html">가맹점 모집</a></li>
+                            <li><a href="recruit.html">인재 채용</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="menu.html">
+                            MENU
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>메뉴</li>
+                            <li><a href="menu.html">스페셜&할인팩</a></li>
+                            <li><a href="menu.html">프리미엄</a></li>
+                            <li><a href="menu.html">와퍼</a></li>
+                            <li><a href="menu.html">주니어&버거</a></li>
+                            <li><a href="menu.html">올데이킹&치킨버거</a></li>
+                            <li><a href="menu.html">사이드</a></li>
+                            <li><a href="menu.html">음료&디저트</a></li>
+                            <li><a href="menu.html">독퍼</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="event.html">
+                            EVENT
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>이벤트</li>
+                            <li><a href="event.html">이벤트</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="story.html">
+                            STORY
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>스토리</li>
+                            <li><a href="burgerking_story.html">버거킹 스토리</a></li>
+                            <li><a href="burgerking_why.html">WHY 버거킹</a></li>
+                            <li><a href="burgerking_news.html">버거킹 NEWS</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            SIGN IN
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ol class="nanumgothic">
+                            <li>로그인</li>
+                            <li><a href="login.html">로그인</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <!-- //nav -->
+            <a href="#" class="floatLeft">Delivery Order</a>
+        </div>
+    </header>
+    <!-- //header -->
+    <button class="top_button"><img src="images/icon_TOP_button.png" alt="최상단으로 이동합니다"></button>
+    <!-- //top_button -->
+    <section class="top_banner">
+        <div class="floatContainer">
+            <h2 class="floatLeft strong_05">앱 이용 안내</h2>
+            <ul class="floatRight floatContainer">
+                <li class="floatLeft">
+                    <a href="index.html">
+                        <span class="material-icons">
+                            home
+                        </span>
+                    </a>
+                </li>
+                <li class="floatLeft">&gt;</li>
+                <li class="floatLeft"><a href="application.html">버거킹 앱 이용 팁</a></li>
+                <li class="floatLeft">&gt;</li>
+                <li class="floatLeft">앱 이용 안내</li>
+            </ul>
+        </div>
+    </section>
+    <!-- //top_banner -->
+    <div class="page_control">
+        <h2 class="strong_06">앱 이용 안내</h2>
+        <ul>
+            <li>딜리버리 이용안내</li>
+            <li>킹오더 이용안내</li>
+            <li>패스트오더 이용안내</li>
+            <li>매장찾기 이용안내</li>
+            <li>쿠폰 이용안내</li>
+        </ul>
+    </div>
+    <!-- //page_control -->
+    <section class="guide_app grid_wrap">
+        <div class="img_guide">
+            <h2>딜리버리 이용안내</h2>
+            <ul>
+                <li>
+                    <strong>1. 배달지 설정</strong>
+                    <p>배달 받을 곳의 주소를 확인해주세요.</p>
+                </li>
+                <li>
+                    <strong>2. 배달지 설정</strong>
+                    <p>배달 받을 곳의 주소를 확인해주세요.</p>
+                </li>
+                <li>
+                    <strong>3. 카트 담기</strong>
+                    <p>
+                        선택한 메뉴를 카트에 담고 
+                        주문금액을 확인해 주세요.
+                    </p>
+                </li>
+                <li>
+                    <strong>4. 주문하기</strong>
+                    <p>
+                        배달지, 매장, 주문내역, 주문금액, 할인금액, 결제방법, 
+                        쿠폰 확인 후 주문버튼을 선택 하세요.
+                    </p>
+                </li>
+                <li>
+                    <strong>5. 주문완료</strong>
+                    <p>
+                        결제 후 주문이 완료 되면  배달시간 및 
+                        배달상황을 알 수 있어요.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="img_guide">
+            <h2>킹오더 이용안내</h2>
+            <ul>
+                <li>
+                    <strong>1. 주변 매장 검색</strong>
+                    <p>
+                        주문 후 직접 픽업할  
+                        근처 매장을 선택해 주세요.
+                    </p>
+                </li>
+                <li>
+                    <strong>2. 메뉴 선택</strong>
+                    <p>
+                        킹오더 메뉴를 선택해 주세요.
+                        재료를 추가 하거나  음료와 사이드를 변경 할 수 있어요. 
+                    </p>
+                </li>
+                <li>
+                    <strong>3. 카트 담기</strong>
+                    <p>
+                        선택한 메뉴를 카트에 담고 
+                        주문금액을 확인해 주세요.
+                    </p>
+                </li>
+                <li>
+                    <strong>4. 주문하기</strong>
+                    <p>
+                        매장, 주문내역, 주문금액, 할인금액,
+                        결제방법, 쿠폰을 확인 후 주문버튼을 선택 하세요. 
+                    </p>
+                </li>
+                <li>
+                    <strong>5. 주문완료</strong>
+                    <p>
+                        결제 후 주문이 완료 되면 
+                        조리시간 및 픽업번호를 확인 할 수  있어요.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="img_guide">
+            <h2>패스트 오더 이용안내</h2>
+            <ul>
+                <li>
+                    <strong>1. 패스트오더로 주문</strong>
+                    <p>
+                        나의  평상시 주문 패턴에 따라
+                        더 쉽고 빠르게  주문하세요 
+                    </p>
+                </li>
+                <li>
+                    <strong>2. 한번에 클릭!</strong>
+                    <p>
+                        이전 주문 기록을 통해 
+                        간편하게 한번에 주문할 수 있어요
+                    </p>
+                </li>
+                <li>
+                    <strong>3. 나만의 세트 설정</strong>
+                    <p>
+                        MY세트, MY배달지를통해
+                        더 쉽고 빠르게 주문하세요 
+                    </p>
+                </li>
+                <li>
+                    <strong>4. 나만의 배달지 설정</strong>
+                    <p>
+                        자주 배달받는 주소를 MY배달지로 등록해 두면
+                        패스트오더로 주문이 더욱 빠르고 쉬워요! 
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="img_guide">
+            <h2>매장찾기 이용안내</h2>
+            <ul>
+                <li>
+                    <strong>1. 가까운 매장</strong>
+                    <p>
+                        위치설정을 켜두시면 현재 내 위치와  
+                        가장 가까운 매장을 바로 찾을 수 있어요. 
+                    </p>
+                </li>
+                <li>
+                    <strong>2. 매장명 검색</strong>
+                    <p>
+                        매장이름을 입력하시면 
+                        바로 찾을 수 있어요.
+                    </p>
+                </li>
+                <li>
+                    <strong>3. 지역검색</strong>
+                    <p>
+                        지역 이름을 선택하시면
+                        지역별 매장을 찾을 수 있어요. 
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="img_guide">
+            <h2>쿠폰 이용안내</h2>
+            <ul>
+                <li>
+                    <strong>1. 매장용 쿠폰 </strong>
+                    <p>
+                        매장 방문 시 키오스크 에서 쿠폰 바코드를 
+                        스캔하시면 쿠폰을 사용하실 수 있어요.
+                    </p>
+                </li>
+                <li>
+                    <strong>2. 킹오더용 쿠폰</strong>
+                    <p>
+                        킹오더 쿠폰으로 주문 하시면 
+                        할인된 금액으로 주문 하실 수 있어요.
+                    </p>
+                </li>
+                <li>
+                    <strong>3. 딜리버리용 쿠폰</strong>
+                    <p>
+                        딜리버리용 쿠폰으로 주문 하시면  
+                        할인된 금액으로 주문 하실 수 있어요.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="download_link floatContainer grid_wrap">
+        <div class="floatContainer floatLeft">
+            <div class="floatLeft">
+                <h2 class="strong_03">스토어 다운로드</h2>
+                <p class="title_01">
+                    애플 앱스토어와 구글 플레이스토어에서 
+                    버거킹 앱을 다운로드 해보세요.
+                </p>
+            </div>
+            <div class="floatRight">
+                <a href="https://play.google.com/store/apps/details?id=kr.co.burgerkinghybrid"><img src="images/Google_play.png" alt="google play로 이동합니다"></a>
+                <a href="https://apps.apple.com/kr/app/%EA%B3%B5%EC%8B%9D-%EB%B2%84%EA%B1%B0%ED%82%B9-burger-king-korea/id1017567032"><img src="images/App_store.png" alt="app store로 이동합니다"></a>
+            </div>
+        </div>
+        <div class="floatContainer floatLeft">
+            <div class="floatLeft">
+                <h2 class="strong_03">스토어 다운로드</h2>
+                <p class="title_01">
+                    애플 앱스토어와 구글 플레이스토어에서 
+                    버거킹 앱을 다운로드 해보세요.
+                </p>
+            </div>
+            <div class="floatRight">
+                <img src="images/store_QR.png" alt="버거킹 어플 다운로드 QR코드 입니다">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul class="floatContainer">
+            <li>
+                <h2>HOME <button></button></h2>
+                <ol>
+                    <li><a href="location.html">매장 찾기</a></li>
+                    <li><a href="service.html">고객 서비스</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="application.html">버거킹 앱 이용 팁</a></li>
+                    <li><a href="questions.html">FAQ</a></li>
+                    <li><a href="inquiry.html">문의</a></li>
+                    <li><a href="recruitment.html">가맹점 모집</a></li>
+                    <li><a href="recruit.html">인재 채용</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>MENU <button></button></h2>
+                <ol>
+                    <li><a href="menu.html">스페셜&할인팩</a></li>
+                    <li><a href="menu.html">프리미엄</a></li>
+                    <li><a href="menu.html">와퍼</a></li>
+                    <li><a href="menu.html">주니어&버거</a></li>
+                    <li><a href="menu.html">올데이킹&치킨버거</a></li>
+                    <li><a href="menu.html">사이드</a></li>
+                    <li><a href="menu.html">음료&디저트</a></li>
+                    <li><a href="menu.html">독퍼</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>EVENT <button></button></h2>
+                <ol>
+                    <li><a href="event.html">이벤트</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>STORY <button></button></h2>
+                <ol>
+                    <li><a href="burgerking_story.html">버거킹 스토리</a></li>
+                    <li><a href="burgerking_why.html">WHY 버거킹</a></li>
+                    <li><a href="burgerking_news.html">버거킹 NEWS</a></li>
+                </ol>
+            </li>
+            <li>
+                <h2>SIGN IN <button></button></h2>
+                <ol>
+                    <li><a href="login.html">로그인</a></li>
+                </ol>
+            </li>
+        </ul>
+        <div class="policy">
+            <div class="floatContainer">
+                <a href="Terms_of_Use.html">이용약관</a>
+                <a href="Terms_of_Use.html">개인정보취급방침</a>
+                <a href="Terms_of_Use.html">법적고지</a>
+            </div>
+        </div>
+        <!-- clear -->
+        <div class="btn_ft floatContainer">
+            <a href="location.html">매장찾기</a>
+            <a href="recruitment.html">가맹점 모집</a>
+            <a href="recruit.html">인재채용</a>
+        </div>
+        <address class="floatContainer">
+            <span class="footer_title">(주)BKR 대표이사 문영주</span>
+            <a href="tel:+8215990505" class="footer_title">TEL : 1599-0505</a>
+            <span class="footer_title">사업자 등록번호 101-86-76277</span>
+            <span class="footer_title">통신판매번호 : 2016-서울종로-1050</span>
+        </address>
+        <p>Copyright 2019 BKR Co. Ltd. All right Reserved</p>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>
