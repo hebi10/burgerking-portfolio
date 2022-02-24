@@ -14,6 +14,7 @@ $(document).ready(function(){
     menu_choice_active();
     event_active();
     event_page();
+    news_page();
 });
 
 function event_Time_img01(){
@@ -276,4 +277,17 @@ function event_page(){
             $('.end_event').css('display','block');
         }
     });
+}
+
+function news_page(){
+    $('.burgerking_news_page ol li').on('click',function(){
+        $('.burgerking_news_page ol li').removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.burgerking_news_page ul li').on('click',function(){
+        $('.burgerking_news_page ul li').removeClass('active');
+        $(this).addClass('active');
+    });
+    let ul_height = $('.burgerking_news_page ul li').outerHeight(true);
+    $('.burgerking_news_page ul').css('height', ul_height*3);
 }
