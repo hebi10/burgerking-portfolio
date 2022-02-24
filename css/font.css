@@ -1,0 +1,417 @@
+/* S-Core Dream 5 */
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* S-Core Dream 8 */
+@font-face {
+    font-family: 'S-CoreDream-8Heavy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 나눔 고딕 */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+ font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+@media screen and (max-width: 767px){
+    /* font case */
+    /* FOOTER NAV STRONG */
+    .footer_nav{
+        font-family: 'Arial';
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.992px;
+    }
+    
+    /* FOOTER TITLE */
+    .footer_title{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 8px;
+        font-weight: 500;
+    }
+    
+    /* WEAK TITLE_01 */
+    .weak_title_01{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 8px;
+        font-weight: 100;
+        letter-spacing: -0.88px;
+    }
+    
+    /* WEAK TITLE_02 */
+    .weak_title_02{
+        font-family: 'Arial';
+        font-size: 8px;
+        font-weight: 100;
+        letter-spacing: -0.88px;
+    }
+    
+    /* WEAK TITLE_03 */
+    .weak_title_03{
+        font-family: 'S-CoreDream-5Medium';
+        font-size: 15px;
+        letter-spacing: -0.88px;
+    }
+    
+    /* STRONG TITLE_01 */
+    .strong_title_01{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 12px;
+        font-weight: 900;
+    }
+    
+    /* STRONG TITLE_02 */
+    .strong_title_02{
+        font-family: 'S-CoreDream-5Medium';
+        font-size: 14px;
+    }
+    
+    /* TITLE_01 */
+    .title_01{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 11px;
+        letter-spacing: -0.72px;
+        font-weight: 100;
+    }
+    
+    /* TITLE_02 */
+    .title_02{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    /* TITLE_03 */
+    .title_03{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 14px;
+        font-weight: 100;
+        letter-spacing: -0.32px;
+    }
+
+    /* TITLE_03_02 */
+    .title_03_02{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 17px;
+        font-weight: 900;
+        letter-spacing: -0.2px;
+    }
+    
+    /* TITLE_04_1 */
+    .title_04_1{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: -0.48px;
+    }
+    
+    /* TITLE_04_2 */
+    .title_04_2{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: -0.48px;
+    }
+
+    /* TITLE_04_3 */
+    .title_04_3{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 15px;
+        font-weight: 900;
+    }
+    
+    
+    /* TITLE_05 */
+    .title_05{
+        font-family: 'S-CoreDream-5Medium';
+        font-size: 16px;
+    }
+    
+    /* TITLE_06 */
+    .title_06{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 14px;
+        font-weight: 100;
+    }
+    
+    /* NUM STRONG */
+    .num_strong{
+        font-family: 'Arial';
+        font-size: 100px;
+        font-weight: 500;
+    }
+    
+    /* STRONG_01 */
+    .strong_01{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 23px;
+        font-weight: 900;
+        letter-spacing: 0.352px;
+    }
+    
+    /* STRONG_02 */
+    .strong_02{
+        font-family: 'S-CoreDream-8Heavy';
+        font-size: 21px;
+    }
+    
+    /* STRONG_03 */
+    .strong_03{
+        font-family: 'S-CoreDream-8Heavy';
+        font-size: 23px;
+        letter-spacing: -0.528px;
+    }
+    
+    /* STRONG_04 */
+    .strong_04{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 26px;
+        letter-spacing: -0.16px;
+        font-weight: 500;
+    }
+    
+    /* STRONG_05 */
+    .strong_05{
+        font-family: 'S-CoreDream-8Heavy';
+        font-size: 30px;
+        letter-spacing: -0.48px;
+    }
+    
+    /* STRONG_06 */
+    .strong_06{
+        font-family: 'S-CoreDream-8Heavy';
+        font-size: 46px;
+        letter-spacing: 1.728px;
+    }
+    
+    /* STRONG_07 */
+    .strong_07{
+        font-family: 'S-CoreDream-8Heavy';
+        font-size: 80px;
+        letter-spacing: 3.696px;
+    }
+    
+    /* STRONG_08 */
+    .strong_08{
+        font-family: 'S-CoreDream-8Heavy';
+        font-size: 100px;
+        letter-spacing: 2.32px;
+    }
+    
+    /* NAV Arial */
+    .nav_arial{
+        font-family: 'Arial';
+        font-size: 9px;
+        letter-spacing: 0.992px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 768px){
+    /* font case */
+    /* FOOTER NAV STRONG */
+    .footer_nav{
+        font-family: 'Arial';
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.992px;
+    }
+    
+    /* FOOTER TITLE */
+    .footer_title{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    /* WEAK TITLE_01 */
+    .weak_title_01{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 12px;
+        font-weight: 100;
+        letter-spacing: -0.88px;
+    }
+    
+    /* WEAK TITLE_02 */
+    .weak_title_02{
+        font-family: 'Arial';
+        font-size: 12px;
+        font-weight: 100;
+        letter-spacing: -0.88px;
+    }
+    
+    /* WEAK TITLE_03 */
+    .weak_title_03{
+        font-family: 'S-CoreDream-5Medium';
+        font-size: 19px;
+        letter-spacing: -0.88px;
+    }
+    
+    /* STRONG TITLE_01 */
+    .strong_title_01{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+    }
+    
+    /* STRONG TITLE_02 */
+    .strong_title_02{
+        font-family: 'S-CoreDream-5Medium';
+        font-size: 18px;
+    }
+    
+    /* TITLE_01 */
+    .title_01{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 15px;
+        letter-spacing: -0.72px;
+        font-weight: 100;
+    }
+    
+    /* TITLE_02 */
+    .title_02{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    
+    /* TITLE_03 */
+    .title_03{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 18px;
+        font-weight: 100;
+        letter-spacing: -0.2px;
+    }
+
+    /* TITLE_03_02 */
+    .title_03_02{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 21px;
+        font-weight: 900;
+        letter-spacing: -0.2px;
+    }
+    
+    /* TITLE_04_1 */
+    .title_04_1{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 19px;
+        font-weight: 900;
+        letter-spacing: -0.48px;
+    }
+    
+    /* TITLE_04_2 */
+    .title_04_2{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 19px;
+        font-weight: 900;
+        letter-spacing: -0.48px;
+    }
+
+    /* TITLE_04_3 */
+    .title_04_3{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 19px;
+        font-weight: 900;
+    }
+    
+    /* TITLE_05 */
+    .title_05{
+        font-family: 'S-CoreDream-5Medium';
+        font-size: 20px;
+    }
+    
+    /* TITLE_06 */
+    .title_06{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+        /* TITLE_06 */
+    .title_06{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    
+    /* NUM STRONG */
+    .num_strong{
+        font-family: 'Arial';
+        font-size: 100px;
+        font-weight: 500;
+    }
+    
+    /* STRONG_01 */
+    .strong_01{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 27px;
+        font-weight: 900;
+        letter-spacing: 0.352px;
+    }
+    
+    /* STRONG_02 */
+    .strong_02{
+        font-family: 'S-CoreDream-8Heavy';
+        font-size: 25px;
+    }
+    
+    /* STRONG_03 */
+    .strong_03{
+        font-family: 'S-CoreDream-8Heavy';
+        font-size: 27px;
+        letter-spacing: -0.528px;
+    }
+    
+    /* STRONG_04 */
+    .strong_04{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 30px;
+        letter-spacing: -0.16px;
+        font-weight: 500;
+    }
+    
+    /* STRONG_05 */
+    .strong_05{
+        font-family: 'S-CoreDream-8Heavy';
+        font-size: 34px;
+        letter-spacing: -0.48px;
+    }
+    
+    /* STRONG_06 */
+    .strong_06{
+        font-family: 'S-CoreDream-8Heavy';
+        font-size: 50px;
+        letter-spacing: 1.728px;
+    }
+    
+    /* STRONG_07 */
+    .strong_07{
+        font-family: 'S-CoreDream-8Heavy';
+        font-size: 80px;
+        letter-spacing: 3.696px;
+    }
+    
+    /* STRONG_08 */
+    .strong_08{
+        font-family: 'S-CoreDream-8Heavy';
+        font-size: 100px;
+        letter-spacing: 2.32px;
+    }
+    
+    /* NAV Arial */
+    .nav_arial{
+        font-family: 'Arial';
+        font-size: 13px;
+        letter-spacing: 0.992px;
+        font-weight: 500;
+    }
+}
