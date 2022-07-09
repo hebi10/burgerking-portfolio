@@ -10400,8 +10400,17 @@
         width: 400px;
     }
 
+    .service_page .contents03 div a img{
+        width: 100%;
+    }
+
+    .service_page .contents03 div a{
+        width: 49%;
+        display: block;
+    }
+
     .service_page .contents03 div a:nth-child(1){
-        margin-right: 39px;
+        margin-right: 2%;
     }
 
     .service_page .contents03 div:nth-of-type(2){
