@@ -102,6 +102,13 @@
     background-color: #110c1d;
 }
 
+.main_index .location{
+    text-align: center;
+    padding: 45px 0;
+    background-color: #fff;
+}
+
+
 /* media query */
 @media screen and (max-width: 767px){
     /* main index */
@@ -168,7 +175,7 @@
 
     .main_index .event>.grid_wrap{
         position: relative;
-        padding-bottom: 60%;
+        padding-bottom: 31%;
     }
 
     .main_index .event h2 span{
@@ -206,25 +213,18 @@
     }
 
     .main_index .event div > img:nth-of-type(1){
-        max-width: 38%;
-        position: absolute;
-        top: 32%;
-        left: 0;
+        width: 50%;
+        margin: 20px 5% 0 auto;
     }
 
     .main_index .event div >  img:nth-of-type(2){
-        max-width: 35%;
-        position: absolute;
-        top: 50%;
-        left: 52%;
-        transform: translateX(-50%);
+        width: 50%;
+        margin-left: 5%;
     }
 
     .main_index .event div >  img:nth-of-type(3){
-        max-width: 38%;
-        position: absolute;
-        top: 35%;
-        right: 0;
+        width: 50%;
+        margin: 0 5% 0 auto;
     }
 
     .main_index .addTime{
@@ -669,7 +669,7 @@
 
     .main_index .event_new_menu{
         background-color: #f1e5cf;
-        padding-bottom: 80px;
+        padding: 10px 0 80px;
     }
     
     .main_index .event_new_menu h2{
@@ -695,12 +695,6 @@
     }
 
     /* location */
-    .main_index .location{
-        text-align: center;
-        padding: 45px 0;
-        background-color: white;
-    }
-
     .main_index .location h2{
         display: inline-block;
         border-bottom: 1px solid rgba(51, 51, 51, 0.3);
@@ -708,17 +702,16 @@
         margin-bottom: 10px;
     }
 
-    .main_index .location>p{
+    .main_index .location > p{
         color: rgba(51, 51, 51, 0.3);
-        margin-bottom: 10px;
+        margin: 10px 0 0;
     }
 
     /* 매장 찾기 button */
     .main_index .location > a{
-        margin: 0 auto;
+        margin: 20px auto 40px;
         color: #333333;
         border: 2px solid #333333;
-        margin-bottom: 40px;
     }
 
     .main_index .location > a:hover{
@@ -5182,12 +5175,6 @@
     }
 
     /* location */
-    .main_index .location{
-        text-align: center;
-        padding: 45px 0;
-        background-color: white;
-    }
-
     .main_index .location h2{
         display: inline-block;
         border-bottom: 1px solid rgba(51, 51, 51, 0.3);
@@ -9483,12 +9470,6 @@
     }
 
     /* location */
-    .main_index .location{
-        text-align: center;
-        padding: 45px 0;
-        background-color: white;
-    }
-
     .main_index .location h2{
         display: inline-block;
         border-bottom: 1px solid rgba(51, 51, 51, 0.3);
