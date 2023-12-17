@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    modal();
     mainBanner();
     noticeEvent();
     scroll_transform();
@@ -11,6 +12,16 @@ $(document).ready(function(){
     event_page();
     news_page();
 });
+
+function modal(){
+    $('.modal_box').fadeIn(1000);
+    $('.modal_bg').fadeIn(1000);
+    
+    $('.modal_box button').click(function(){
+        $('.modal_box').fadeOut();
+        $('.modal_bg').fadeOut();
+    });
+}
 
 function noticeEvent(){
     $('.notice>div:nth-child(2)>span').click(function(){
