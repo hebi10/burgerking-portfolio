@@ -1,11 +1,6 @@
 $(document).ready(function(){
-    $('.notice>div:nth-child(2)>span').click(function(){
-        $('.event_show').toggleClass('event_active');
-        $('.notice div:nth-child(2)>.material-icons').toggleClass('active');
-    })
-    setTimeout(event_Time_img01,500);
-    setTimeout(event_Time_img02,1500);
-    setTimeout(event_Time_img03,2500);
+    mainBanner();
+    noticeEvent();
     scroll_transform();
     notice_Rolling();
     notice_page_control();
@@ -16,6 +11,19 @@ $(document).ready(function(){
     event_page();
     news_page();
 });
+
+function noticeEvent(){
+    $('.notice>div:nth-child(2)>span').click(function(){
+        $('.event_show').toggleClass('event_active');
+        $('.notice div:nth-child(2)>.material-icons').toggleClass('active');
+    })
+}
+
+function mainBanner(){
+    setTimeout(event_Time_img01,500);
+    setTimeout(event_Time_img02,1500);
+    setTimeout(event_Time_img03,2500);
+}
 
 function event_Time_img01(){
     $('.event div>img:nth-of-type(1)').animate({

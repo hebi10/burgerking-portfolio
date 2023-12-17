@@ -272,7 +272,7 @@ footer a{
 
     /* footer */
     footer{
-        padding-bottom: 35px;
+        padding: 0 0 35px;
     }
 
     footer ul>li{
@@ -288,6 +288,11 @@ footer a{
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         background-color: black;
         position: relative;
+    }
+
+    .policy .floatContainer{
+        display: flex;
+        justify-content: center;
     }
 
     footer ul li h2 button{
@@ -354,13 +359,12 @@ footer a{
     /* footer policy */ 
     footer .policy{
         margin: 30px auto 25px;
-        width: 182px;
         position: relative;
     }
 
     footer .policy div a{
         font-family: 'Nanum Gothic', sans-serif;
-        font-size: 8px;
+        font-size: clamp(12px, 4.1667vw, 20px);
         font-weight: 500;
         float: left;
     }
