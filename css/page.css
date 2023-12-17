@@ -303,6 +303,7 @@
         display: block;
         width: 42px;
         height: 42px;
+        text-align: right;
         position: absolute;
         right: 15%;
         top: 20%;
@@ -328,13 +329,14 @@
     }
 
     .main_index .notice div.floatContainer:nth-child(2)>.material-icons{
-        border: 3px solid #333333;
+        border: 5px solid #333333;
         border-radius: 100%;
         box-sizing: border-box;
-        font-size: 32px;
+        font-size: 26px;
+        font-weight: 900;
         cursor: pointer;
         position: absolute;
-        right: 15%;
+        right: 15.3%;
         top: 20%;
     }
     
