@@ -62,6 +62,7 @@
 }
 
 .modalWrap .modal_box{
+    max-width: 400px;
 	width: 70%;
 	height: 40vh;
 	margin: 0 auto;
@@ -86,7 +87,6 @@
 }
 
 .modalWrap p{
-    font-size: 18px;
     line-height: 26px;
     margin-bottom: clamp(10px, 5%, 25px);
 }
