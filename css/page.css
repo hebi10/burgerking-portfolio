@@ -59,6 +59,7 @@
 	margin: 0 auto;
 	width: 100%;
 	height: 100%;
+	background-color: #F6F5EF;
 }
 
 .modalWrap .modal_box{
@@ -68,7 +69,7 @@
 	margin: 0 auto;
 	padding: 20px;
 	text-align: center;
-	background-color: azure;
+	background-color: #F6F5EF;
 	display: flex;
 	flex-flow: column;
 	position: absolute;
