@@ -14,13 +14,43 @@ $(document).ready(function(){
 });
 
 function modal(){
-    $('.modal_box').fadeIn(1000);
-    $('.modal_bg').fadeIn(1000);
-    
-    $('.modal_box button').click(function(){
-        $('.modal_box').fadeOut();
-        $('.modal_bg').fadeOut();
-    });
+    /* 하루동안 보지 않기 */
+    const popUp =  $('.modalWrap'); // 모달 박스
+    const closeBtn =$('.modalWrap .closeBtn'); // 닫기 버튼 버튼
+    const onedayBtn =$('.modalWrap .onedayBtn'); // 오늘 하루 보지 않기 버튼
+
+    const handlePopup = {
+        setStorageForDate: () => {
+            const date = new Date();
+            localStorage.setItem('popupDate', JSON.stringify({
+                date: date.getDate(),
+                month: date.getMonth(),
+                year: date.getFullYear()
+            }));
+        },
+        isPopupHidden: () => {
+            const today = new Date();
+            const popupDate = JSON.parse(localStorage.getItem('popupDate'));
+
+            if (popupDate !== null) {
+                return (popupDate.date !== today.getDate() ||
+                    popupDate.month !== today.getMonth() ||
+                    popupDate.year !== today.getFullYear()
+                ) ? false : true;
+            }
+        },
+        handleClose: () => {
+            popUp.removeClass('hidden');
+        },
+        handleOnedayClose: () => {
+            popUp.removeClass('hidden');
+            handlePopup.setStorageForDate();
+        }
+    }
+
+    handlePopup.isPopupHidden() ? popUp.removeClass('hidden') : popUp.addClass('hidden');
+    closeBtn.on('click', handlePopup.handleClose);
+    onedayBtn.on('click', handlePopup.handleOnedayClose);
 }
 
 function noticeEvent(){
